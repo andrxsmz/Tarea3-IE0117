@@ -13,10 +13,10 @@ Lee las lineas del archivo desde la entrada estándar(stdin) usando fgets(). Pos
 Además, usando error estándar(stderr) para escribir en otro archivo de texto las lineas invalidas, que no contienen números, con un mensaje de error. 
 Para ejecutar el código y escribir las salidas y los errores en archivos .txt se usa redireccionamiento. Con un arcchivo de entrada llamado "output.txt" se puede ejecutar de la siguiente manera: 
 
-<div align="center">
 
 ```bash
-./ejecutable < input.txt > output.txt 2> error.txt
+gcc -Wall namefile.c -o executable
+./executable < input.txt > output.txt 2> error.txt
 ```
 
 Mostrando la salida(numeros validos) en el archivo "output.txt" y los errores en "error.txt". 
